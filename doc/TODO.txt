@@ -1,5 +1,18 @@
 TODO.txt
 
+Fri Dec 20 11:23:03 UTC 2019
+
+  * orl anl and company - want to have a bitmask to be
+    used to write to the memory registers in a bitmapped
+    (bitmasked) way.
+
+    Primitive might be: read the address, do the masking
+    outside the register (do it locally on the virtual
+    stack) and write the result back to the address.
+
+    The idea is to preserve whatever the register already
+    had, and to set or clear a single bit (where required).
+
 Tue Dec 17 23:12:18 UTC 2019
 
   * PORTC_0  through  PORTC_3  -  make operational, in eForth .S sourcefile
