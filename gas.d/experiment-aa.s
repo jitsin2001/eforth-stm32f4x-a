@@ -34,9 +34,16 @@ __Vectors:
 .global Reset_Handler
 
 Reset_Handler:
-    .global __main
+    .word _start
 
-__main:
+    @ .global _start
+    @ .global _start
+
+    @ .global __main
+
+@ __main:
+
+_start:
   ldr r0, set_gpio_dir
   blx r0
 loop:
